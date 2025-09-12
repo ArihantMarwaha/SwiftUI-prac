@@ -8,8 +8,40 @@
 import SwiftUI
 
 struct counter: View {
+    @State var count : Int = 0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            
+            Text("The counter is ")
+                .font(.largeTitle)
+                .fontWidth(.expanded)
+                .bold()
+            
+            Text("\(count)")
+                .font(.largeTitle)
+                .id(count)
+                .transition(.scale.animation(.easeInOut))
+                .animation(.easeIn, value: count)
+                .fontWidth(.expanded)
+                .bold()
+            
+            
+            
+            HStack{
+                Button("+"){count+=1}
+                    .fontWidth(.expanded)
+                    .font(.largeTitle)
+                    .padding()
+                Button("-"){count-=1}
+                    .fontWidth(.expanded)
+                    .font(.largeTitle)
+                    .padding()
+            }
+            
+        }
+      
+        
     }
 }
 

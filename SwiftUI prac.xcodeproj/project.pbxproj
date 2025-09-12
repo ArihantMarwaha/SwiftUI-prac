@@ -16,6 +16,11 @@
 			path = "SwiftUI prac";
 			sourceTree = "<group>";
 		};
+		351C38222E73DCA300EE17C3 /* week1 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = week1;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,7 @@
 			children = (
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38152E73DC8400EE17C3 /* Products */,
+				351C38222E73DCA300EE17C3 /* week1 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
+				351C38222E73DCA300EE17C3 /* week1 */,
 			);
 			name = "SwiftUI prac";
 			packageProductDependencies = (
