@@ -27,14 +27,6 @@ struct base: View {
             .frame(width: 100,height: 100)
             .foregroundStyle(Color.yellow)
         
-
-
-        
-        
-            
-           
-        
-     
         
     }
 }
