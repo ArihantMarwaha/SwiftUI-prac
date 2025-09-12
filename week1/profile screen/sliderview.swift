@@ -10,7 +10,7 @@ import SwiftUI
 struct sliderview: View {
     
     @State private var size : CGFloat = 100
-    @State private var angle : Double = 15
+    @State private var angle : Double = 130
     
     var body: some View {
         
@@ -38,11 +38,11 @@ struct sliderview: View {
                 .animation(.easeInOut, value: angle)
                 .frame(width: ((size/1.42)/1.42)/1.42,height: ((size/1.42)/1.42)/1.42)
             
-            
-                
         }
+        .frame(width:300,height: 300)
+
         
-        Slider(value: $size, in: 50...300)
+        Slider(value: $size, in: 50...200)
             .onChange(of: size) { newValue in
                 angle = Double(newValue) // simple mapping
             }

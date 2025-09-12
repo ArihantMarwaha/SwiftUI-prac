@@ -27,7 +27,7 @@ struct PastaIndex: View {
                         .scaledToFill()
                         .frame(width: 200, height: 200)
                         .clipped()
-                        .cornerRadius(20)
+                        .cornerRadius(30)
                         .onTapGesture {
                             startTyping("Wuton – Delicious dumplings with savory filling.")
                         }
@@ -43,7 +43,7 @@ struct PastaIndex: View {
                         .scaledToFill()
                         .frame(width: 200, height: 200)
                         .clipped()
-                        .cornerRadius(20)
+                        .cornerRadius(30)
                         .onTapGesture {
                             startTyping("Ramen – Classic Japanese noodle soup.")
                         }
@@ -59,7 +59,7 @@ struct PastaIndex: View {
                         .scaledToFill()
                         .frame(width: 200, height: 200)
                         .clipped()
-                        .cornerRadius(20)
+                        .cornerRadius(30)
                         .onTapGesture {
                             startTyping("Flower Dish – Aesthetic and fresh.")
                         }

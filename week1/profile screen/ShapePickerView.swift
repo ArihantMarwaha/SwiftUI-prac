@@ -8,8 +8,45 @@
 import SwiftUI
 
 struct ShapePickerView: View {
+    
+    @State var shape :String = "Circle"
+    @State private var size: CGFloat = 100
+    let shapes: [String] = ["Circle","Rectangle","RoundedRec"]
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Group {
+            switch shape {
+            case "Circle":
+                Circle()
+                    .fill(Color.blue)
+                    .frame(width: size, height: size)
+            case "Rectangle":
+                Rectangle()
+                    .fill(Color.green)
+                    .frame(width: size, height: size)
+            case "RoundedRec":
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.purple)
+                    .frame(width: size, height: size)
+            default :
+                Circle()
+                    .fill(Color.red)
+                    .frame(width: size, height: size)
+            }
+        }
+        .shadow(radius: 20)
+        
+        Picker("Select Shape",selection: $shape){
+            ForEach(shapes, id: \.self) { shape in
+                Text(shape)
+            }
+        }
+        .pickerStyle(.menu)
+        .padding(40)
+        
+        
     }
 }
 
