@@ -48,13 +48,8 @@ struct sliderview: View {
             }
             .padding(50)
 
-            
         Text("Size of the circle :")
         Text("\(Int(size))")
-
-       
-            
-
     }
 }
 

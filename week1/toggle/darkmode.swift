@@ -7,12 +7,27 @@
 
 import SwiftUI
 
-struct darkmode: View {
+struct GlobalDarkModeView: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 20) {
+            Text("Hello, SwiftUI!")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Toggle("Enable Dark Mode", isOn: $isDarkMode)
+                .padding()
+                .toggleStyle(SwitchToggleStyle(tint: .blue))
+        }
+        .padding()
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
-#Preview {
-    darkmode()
+
+struct GlobalDarkModeView_Previews: PreviewProvider {
+    static var previews: some View {
+        GlobalDarkModeView()
+    }
 }
