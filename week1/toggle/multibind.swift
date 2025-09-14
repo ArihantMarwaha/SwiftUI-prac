@@ -7,9 +7,43 @@
 
 import SwiftUI
 
-struct multibind: View {
+
+struct multi : View {
+    
+    @Binding var size : CGFloat
+    @Binding var ison : Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Slider(value: $size,in: 0...100,step: 10)
+            .padding(40)
+            .tint(Color.green)
+        
+        Toggle("Turn on the theme",isOn: $ison)
+            .toggleStyle(SwitchToggleStyle(tint: .pink))
+            .padding(.horizontal,40)
+        
+    }
+    
+}
+struct multibind: View {
+    
+    @State var size : CGFloat = 10
+    @AppStorage("theme") private var theme: Bool = false
+    
+    var body: some View {
+        VStack{
+            
+            Circle()
+                .fill(theme ? Color.white : Color.black)
+                .frame(width: size, height: size)
+                .padding()
+                .animation(.easeInOut(duration: 0.5), value: theme)
+            
+            multi(size: $size, ison: $theme)
+            
+        }
+        .preferredColorScheme(theme ? .dark : .light)
     }
 }
 

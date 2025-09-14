@@ -57,6 +57,17 @@ struct buttons : View {
                 .cornerRadius(20)
             }
             .padding()
+            
+            
+            Button(action:{vanity = vanity/3}){
+                Text("/")
+                .font(.largeTitle)
+                .frame(width: 50,height: 50)
+                .background(Color.cyan.opacity(0.5))
+                .foregroundStyle(Color.green)
+                .cornerRadius(20)
+            }
+            .padding()
         }
     }
 }
@@ -122,8 +133,9 @@ struct ToggleDemoView: View {
         VStack(spacing: 30) {
             Text("Wi-Fi is \(wifiEnabled ? "Enabled" : "Disabled")")
                 .font(.title)
-
-            CustomToggle(isOn: $wifiEnabled)   // Pass binding
+            
+            CustomToggle(isOn: $wifiEnabled)
+            // Pass binding
         }
         .padding()
     }

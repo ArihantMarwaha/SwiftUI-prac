@@ -7,9 +7,37 @@
 
 import SwiftUI
 
-struct textfield: View {
+struct customtextfield : View {
+    
+    @Binding var text : String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TextField("Username",text:$text)
+            .padding()
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color.blue, lineWidth: 1)
+            )
+            .autocorrectionDisabled()
+            .background(Color(.systemGray6))
+            .cornerRadius(8)
+            .padding(30)
+
+            
+    }
+}
+
+struct textfield: View {
+    @AppStorage("name") var name : String = ""
+    var body: some View {
+        Text("Hello \(name)")
+            .font(.largeTitle)
+            .fontWidth(.expanded)
+            .fontWeight(.bold)
+            .padding(30)
+        
+        customtextfield(text: $name)
     }
 }
 
