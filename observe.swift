@@ -6,13 +6,46 @@
 //
 
 import SwiftUI
+import Observation // Required for @Observable
 
-struct observe: View {
+@Observable
+class CounterModel {
+    var count = 0
+}
+
+struct CounterView: View {
+    @State private var counter = CounterModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 20) {
+            Text("Count: \(counter.count)")
+                .font(.largeTitle)
+            
+            Button("Increment") {
+                counter.count += 1
+            }
+        }
     }
 }
 
-#Preview {
-    observe()
+@Observable
+class UserModel {
+    var name = ""
 }
+
+struct UserForm: View {
+    @State private var user = UserModel()
+    
+    var body: some View {
+        VStack {
+            TextField("Enter name", text: $user.name) // Binding works!
+                .textFieldStyle(.roundedBorder)
+            
+            Text("Hello, \(user.name)")
+        }
+        .padding()
+    }
+}
+
+
+
