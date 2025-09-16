@@ -131,4 +131,28 @@ struct TodoListView: View {
     }
 }
 
+@Observable
+class ThemeSettings {
+    var isDarkMode = false
+}
+
+struct themeView: View {
+    @State private var settings = ThemeSettings()
+    
+    var body: some View {
+        ZStack {
+            (settings.isDarkMode ? Color.black : Color.white)
+                .ignoresSafeArea()
+            
+            VStack {
+                Toggle("Dark Mode", isOn: $settings.isDarkMode)
+                    .padding()
+                
+                Text("Current Mode: \(settings.isDarkMode ? "Dark 🌙" : "Light ☀️")")
+                    .foregroundColor(settings.isDarkMode ? .white : .black)
+            }
+        }
+    }
+}
+
 
