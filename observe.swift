@@ -49,3 +49,86 @@ struct UserForm: View {
 
 
 
+
+
+@Observable
+class Counter {
+    var value = 0
+    
+    func increment() {
+        value += 1
+    }
+    
+    func reset() {
+        value = 0
+    }
+}
+
+struct CountView: View {
+    @State private var counter = Counter()
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Count: \(counter.value)")
+                .font(.largeTitle)
+            
+            Button("Increment") {
+                counter.increment()
+            }
+            
+            Button("Reset") {
+                counter.reset()
+            }
+        }
+    }
+}
+
+
+
+@Observable
+class UserProfile {
+    var name = ""
+    var age = 18
+}
+
+struct ProfileForm: View {
+    @State private var profile = UserProfile()
+    
+    var body: some View {
+        Form {
+            TextField("Name", text: $profile.name)
+            Stepper("Age: \(profile.age)", value: $profile.age, in: 0...100)
+            
+            Text("Name: \(profile.name), Age: \(profile.age)")
+                .padding()
+        }
+    }
+}
+
+
+@Observable
+class TodoItem :Identifiable {
+    var title: String
+    var done: Bool
+    
+    init(title: String, done: Bool = false) {
+        self.title = title
+        self.done = done
+    }
+}
+
+struct TodoListView: View {
+    @State private var todos = [
+        TodoItem(title: "Buy milk"),
+        TodoItem(title: "Walk dog"),
+        TodoItem(title: "Read book")
+    ]
+    
+    var body: some View {
+        List($todos) { $todo in
+            Toggle(todo.title, isOn: $todo.done)
+        }
+    }
+}
+
+
