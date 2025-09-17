@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		35214B0F2E788D4100295D2A /* observe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35214B0E2E788D4100295D2A /* observe.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		351C38142E73DC8400EE17C3 /* SwiftUI prac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI prac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35214B0E2E788D4100295D2A /* observe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = observe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -24,6 +19,11 @@
 		351C38222E73DCA300EE17C3 /* week1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = week1;
+			sourceTree = "<group>";
+		};
+		35C3EA172E7AD00800CDB6CC /* week 2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "week 2";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -42,10 +42,10 @@
 		351C380B2E73DC8300EE17C3 = {
 			isa = PBXGroup;
 			children = (
-				35214B0E2E788D4100295D2A /* observe.swift */,
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38152E73DC8400EE17C3 /* Products */,
 				351C38222E73DCA300EE17C3 /* week1 */,
+				35C3EA172E7AD00800CDB6CC /* week 2 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +75,7 @@
 			fileSystemSynchronizedGroups = (
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38222E73DCA300EE17C3 /* week1 */,
+				35C3EA172E7AD00800CDB6CC /* week 2 */,
 			);
 			name = "SwiftUI prac";
 			packageProductDependencies = (
@@ -132,7 +133,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35214B0F2E788D4100295D2A /* observe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,48 @@
 
 import SwiftUI
 
+@Observable
+class counterform{
+    var count : Int = 0
+    
+    func increment(){
+        count += 1
+    }
+    
+    func decrement(){
+        count -= 1
+    }
+    
+}
+
 struct resetcounter: View {
+    
+    @State private var noman = counterform()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment:.center,spacing: 30){
+            
+            HStack{
+                Text("the value of the counter: ")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .fontWidth(.expanded)
+                Text("\(noman.count)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .fontWidth(.expanded)
+            }
+            
+            Button("+"){noman.increment()}
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .fontWidth(.expanded)
+            Button("-"){noman.decrement()}
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .fontWidth(.expanded)
+            
+        }
     }
 }
 
