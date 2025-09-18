@@ -7,12 +7,31 @@
 
 import SwiftUI
 
-struct datapass: View {
+struct mainpass : View {
+    
+    var item : [String] = ["apple","Banana","Mango"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack{
+            List(item,id: \.self){ item in
+                NavigationLink(item, destination: datapass(fruit: item))
+            }
+            .navigationTitle("fruits")
+        }
+    }
+}
+
+struct datapass: View {
+    
+    var fruit : String
+    
+    
+    var body: some View {
+        Text("You have selected the following fruit : \(fruit)")
     }
 }
 
 #Preview {
-    datapass()
+    mainpass()
 }
