@@ -7,12 +7,42 @@
 
 import SwiftUI
 
-struct navidanavi: View {
+struct more : View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack {
+            List{
+                NavigationLink("Go to navi 1", destination: navi1())
+                NavigationLink("Go to navi 1", destination: navi2())
+                NavigationLink("Go to navi 1", destination: navi3())
+            }
+        }
+        
+    }
+}
+
+struct navi1: View {
+    var body: some View {
+        Text("this is the navi view 1")
+            .font(.largeTitle)
+            .bold()
+    }
+}
+
+
+struct navi2: View {
+    var body: some View {
+        Text("this is the navi view 2")
+    }
+}
+
+
+struct navi3: View {
+    var body: some View {
+        Text("this is the navi view 3")
     }
 }
 
 #Preview {
-    navidanavi()
+    more()
 }
