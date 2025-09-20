@@ -7,12 +7,55 @@
 
 import SwiftUI
 
-struct multicategory_: View {
+struct category:Identifiable,Hashable{
+    var id : UUID = UUID()
+    var categoryName : String
+    var subcategory : [String]
+}
+
+struct nested : View {
+    
+    @Binding var selec : category
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack{
+            List(selec.subcategory,id:\.self){
+                sub in Text(sub)
+            }
+        }
+        
     }
 }
 
-#Preview {
-    multicategory_()
+struct MainCategoryList : View {
+    
+    
+    @State private var mainCategory : [category] = [
+        category(categoryName: "Fruits",subcategory: ["Mango","Apple","Banana"]),
+        category(categoryName: "Cars",subcategory: ["Mango","Apple","Banana"]),
+        category(categoryName: "Phones",subcategory:["Mango","Apple","Banana"])
+    ]
+    
+    
+    var body: some View {
+        
+        NavigationStack{
+            
+            List($mainCategory,id: \.self){
+                $catego in NavigationLink(catego.categoryName,destination: nested(selec: $catego))
+            }
+        }
+        
+        
+        
+    }
 }
+
+#Preview{
+    MainCategoryList()
+}
+
+
+
+
