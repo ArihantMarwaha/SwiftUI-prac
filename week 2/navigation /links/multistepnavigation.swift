@@ -7,12 +7,56 @@
 
 import SwiftUI
 
-struct multistepnavigation: View {
+struct Category: Identifiable {
+    let id = UUID()
+    let name: String
+    let items: [String]
+}
+
+struct MultiStepNavigation: View {
+    let categories = [
+        Category(name: "Fruits", items: ["Apple", "Banana", "Orange"]),
+        Category(name: "Cars", items: ["Tesla", "BMW", "Audi"])
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(categories) { category in
+                NavigationLink(category.name) {
+                    ItemListView(category: category)
+                }
+            }
+            .navigationTitle("Categories")
+        }
+    }
+}
+
+struct ItemListView: View {
+    let category: Category
+    
+    var body: some View {
+        List(category.items, id: \.self) { item in
+            NavigationLink(item) {
+                ItemDetailView(item: item)
+            }
+        }
+        .navigationTitle(category.name)
+    }
+}
+
+struct ItemDetailView: View {
+    let item: String
+    
+    var body: some View {
+        Text("Details for \(item)")
+            .font(.largeTitle)
+            .fontWidth(.expanded)
+            .padding()
+            .navigationTitle(item)
     }
 }
 
 #Preview {
-    multistepnavigation()
+    MultiStepNavigation()
 }
+
