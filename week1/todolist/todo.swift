@@ -31,8 +31,8 @@ struct todoRow :View {
             
             Button(action: {todo.completed.toggle()}){
                 Image(systemName: todo.completed ? "checkmark.circle.fill" : "circle")
-                                   .foregroundColor(todo.completed ? .green : .gray)
-                                   .font(.title2)
+                    .foregroundColor(todo.completed ? .green : .gray)
+                    .font(.title2)
             }
             
             

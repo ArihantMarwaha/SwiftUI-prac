@@ -7,12 +7,46 @@
 
 import SwiftUI
 
-struct customcardMOdifer: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CardModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(radius: 5)
     }
 }
 
-#Preview {
-    customcardMOdifer()
+extension View {
+    func cardStyle() -> some View {
+        self.modifier(CardModifier())
+    }
+}
+
+struct boldmodifer : ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .bold()
+            .cardStyle()
+            .font(.largeTitle)
+            .fontWidth(.expanded)
+    }
+}
+
+extension View{
+    func boldtext()->some View{
+        self.modifier(boldmodifer())
+    }
+}
+
+struct modiferView: View {
+    var body: some View {
+        Text("Reusable Style")
+            .cardStyle()
+            .boldtext()
+    }
+}
+
+#Preview{
+    modiferView()
 }
