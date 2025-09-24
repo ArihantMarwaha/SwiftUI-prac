@@ -7,12 +7,27 @@
 
 import SwiftUI
 
-struct identifylinkView: View {
+struct ModalData: Identifiable {
+    let id = UUID()
+    let text: String
+}
+
+struct ParentView2: View {
+    @State private var activeModal: ModalData?
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Open A") { activeModal = ModalData(text: "A") }
+            Button("Open B") { activeModal = ModalData(text: "B") }
+        }
+        .sheet(item: $activeModal) { data in
+            Text("Modal with \(data.text)")
+                .padding()
+        }
     }
 }
 
+
 #Preview {
-    identifylinkView()
+    ParentView2()
 }

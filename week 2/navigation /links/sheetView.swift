@@ -7,12 +7,40 @@
 
 import SwiftUI
 
-struct sheetView: View {
+struct ParentView: View {
+    @State private var showSheet = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Open Sheet") { showSheet = true }
+        .sheet(isPresented: $showSheet) {
+            todolist()
+                .padding(.vertical,-10)
+            SheetContent()
+        }
     }
 }
 
-#Preview {
-    sheetView()
+struct SheetContent: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        VStack {
+            ZStack{
+                Color.blue
+                    .opacity(0.5)
+                VStack{
+                    Button("Close") { dismiss() }
+                        .foregroundStyle(Color.white)
+                        .offset(x:0,y:-5)
+                }
+            }
+            .frame(height: 90)
+            }
+        .padding(.bottom,-40)
+            
+    }
+}
+
+#Preview{
+    ParentView()
 }

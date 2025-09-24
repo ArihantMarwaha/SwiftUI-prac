@@ -21,6 +21,11 @@
 			path = week1;
 			sourceTree = "<group>";
 		};
+		356C08E42E83DFCC00B94B95 /* week 3 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "week 3";
+			sourceTree = "<group>";
+		};
 		35C3EA172E7AD00800CDB6CC /* week 2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "week 2";
@@ -46,6 +51,7 @@
 				351C38152E73DC8400EE17C3 /* Products */,
 				351C38222E73DCA300EE17C3 /* week1 */,
 				35C3EA172E7AD00800CDB6CC /* week 2 */,
+				356C08E42E83DFCC00B94B95 /* week 3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +81,7 @@
 			fileSystemSynchronizedGroups = (
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38222E73DCA300EE17C3 /* week1 */,
+				356C08E42E83DFCC00B94B95 /* week 3 */,
 				35C3EA172E7AD00800CDB6CC /* week 2 */,
 			);
 			name = "SwiftUI prac";
