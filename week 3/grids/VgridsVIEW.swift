@@ -1,18 +1,18 @@
 //
-//  laztVIew.swift
+//  VgridsVIEW.swift
 //  SwiftUI prac
 //
-//  Created by Arihant Marwaha on 24/09/25.
+//  Created by Arihant Marwaha on 25/09/25.
 //
 
 import SwiftUI
 
-struct laztVIew: View {
+struct VgridsVIEW: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    laztVIew()
+    VgridsVIEW()
 }
