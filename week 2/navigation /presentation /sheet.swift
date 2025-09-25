@@ -7,12 +7,33 @@
 
 import SwiftUI
 
-struct sheet: View {
+struct ParentView9: View {
+    @State private var showSheet = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Open Sheet") { showSheet = true }
+        .sheet(isPresented: $showSheet, onDismiss: {
+            print("Sheet dismissed")
+        }) {
+            SheetContent9()
+                .presentationDetents([.large,.medium,.large])
+                .presentationDragIndicator(.visible)
+                .interactiveDismissDisabled()
+        }
     }
 }
 
-#Preview {
-    sheet()
+struct SheetContent9: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        VStack {
+            Text("Sheet")
+            Button("Close") { dismiss() }
+        }.padding()
+    }
+}
+
+#Preview{
+    ParentView9()
 }
