@@ -7,12 +7,33 @@
 
 import SwiftUI
 
-struct VgridsVIEW: View {
+struct gridExample : View {
+    let data = Array(1...300)
+    
+    let columns = [
+        GridItem(.fixed(80)),
+        GridItem(.flexible()),
+        GridItem(.adaptive(minimum:50, maximum: 100))
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        ForEach(data, id: \.self) { item in
+                            Rectangle()
+                                .fill(Color.blue)
+                                .frame(height: 100)
+                                .overlay(Text("\(item)").foregroundColor(.white))
+                                .onTapGesture {
+                                    print(item)
+                                }
+                        }
+                    }
+                    .padding()
+                }
     }
 }
 
 #Preview {
-    VgridsVIEW()
+    gridExample()
 }
