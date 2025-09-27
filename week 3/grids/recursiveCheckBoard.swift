@@ -29,13 +29,13 @@ struct Checkerboard: View {
         let isDark = (row + col).isMultiple(of: 2)
         
         Rectangle()
-            .fill(isDark ? .black : .white)
-            .frame(width: 40, height: 40)
+            .fill(isDark ? .blue : .red)
+            .frame(width: 60, height: 60)
     }
 }
 
 struct RecursiveCheckerboard: View {
-    var size: Int = 4
+    var size: Int = 2
     var depth: Int = 2   // controls recursion depth
     
     var body: some View {
@@ -56,11 +56,11 @@ struct RecursiveCheckerboard: View {
         
         if depth > 1 {
             RecursiveCheckerboard(size: size, depth: depth - 1)
-                .frame(width: 40, height: 40) // scale down subgrid
+                .frame(width: 100, height: 100) // scale down subgrid
         } else {
             Rectangle()
-                .fill(isDark ? .black : .white)
-                .frame(width: 40, height: 40)
+                .fill(isDark ? .blue : .red)
+                .frame(width: 100, height: 100)
         }
     }
 }
