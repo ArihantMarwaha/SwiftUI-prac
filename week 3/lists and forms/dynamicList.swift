@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct dynamicList: View {
+    @State private var tasks = ["Study", "Workout", "Read"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(tasks, id: \.self) { task in
+                Text(task)
+            }
+            .onDelete { indexSet in
+                tasks.remove(atOffsets: indexSet)
+            }
+            .onMove { indices, newOffset in
+                tasks.move(fromOffsets: indices, toOffset: newOffset)
+            }
+        }
+        .toolbar {
+            EditButton()
+        }
+        ScrollView {
+            LazyVStack {
+                ForEach(0..<1000) { i in
+                    Text("Row \(i)")
+                        .padding()
+                        .background(i % 2 == 0 ? Color.gray.opacity(0.2) : .clear)
+                }
+            }
+        }
+
     }
 }
 

@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct structuredPicker: View {
+    @State private var selectedColor = "Red"
+    let colors = ["Red", "Blue", "Green"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form{
+            Picker("",selection: $selectedColor){
+                ForEach(colors,id: \.self){colors in
+                    Text(colors)
+                }
+            }
+        }
     }
 }
 

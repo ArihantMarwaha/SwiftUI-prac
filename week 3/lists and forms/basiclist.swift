@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct basiclist: View {
+    var fruit : [String] = ["Apple","Mango","banana"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(fruit,id:\.self){ frit in
+            Text(frit)
+        }
+        .toolbar{
+            EditButton()
+        }
+        
+        List{
+            Section(header: Text("fruits")){
+                Text("Apple")
+                Text("Banana")
+            }
+            Section(header: Text("vegetables")){
+                Text("Carrot")
+                Text("Broccoli")
+                ForEach(fruit,id: \.self){frit in
+                    Text(frit)
+                }
+            }
+        }
+        
     }
 }
 
