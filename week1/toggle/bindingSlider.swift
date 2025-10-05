@@ -27,6 +27,7 @@ struct bindingSlider: View {
         Circle()
             .fill(Color(hue: size/300, saturation: 1, brightness: 1))
             .frame(width: size , height:size)
+            .glassEffect()
         bindyourslider(size: $size)
     }
 }

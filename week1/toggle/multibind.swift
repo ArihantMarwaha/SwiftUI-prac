@@ -15,8 +15,8 @@ struct multi : View {
     
     var body: some View {
         
-        Slider(value: $size,in: 0...100,step: 10)
-            .padding(40)
+        Slider(value: $size,in: 10...100,step: 10)
+            .padding(80)
             .tint(Color.green)
         
         Toggle("Turn on the theme",isOn: $ison)

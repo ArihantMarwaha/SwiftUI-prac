@@ -11,20 +11,25 @@ struct dynamicList: View {
     @State private var tasks = ["Study", "Workout", "Read"]
     
     var body: some View {
-        List {
-            ForEach(tasks, id: \.self) { task in
-                Text(task)
+        NavigationStack{
+            List {
+                
+                ForEach(tasks, id: \.self) { task in
+                    Text(task)
+                }
+                .onDelete { indexSet in
+                    tasks.remove(atOffsets: indexSet)
+                }
+                .onMove { indices, newOffset in
+                    tasks.move(fromOffsets: indices, toOffset: newOffset)
+                }
             }
-            .onDelete { indexSet in
-                tasks.remove(atOffsets: indexSet)
+            .toolbar {
+                EditButton()
             }
-            .onMove { indices, newOffset in
-                tasks.move(fromOffsets: indices, toOffset: newOffset)
-            }
+            .navigationTitle("Tools")
         }
-        .toolbar {
-            EditButton()
-        }
+   
         ScrollView {
             LazyVStack {
                 ForEach(0..<1000) { i in

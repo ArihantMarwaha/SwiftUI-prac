@@ -56,12 +56,11 @@ struct todolist : View {
     var body: some View {
         
         NavigationStack{
-                List{
-                    ForEach($todos){
-                        $todo in todoRow(todo: $todo)
-                    }
+            List{
+                ForEach($todos){
+                    $todo in todoRow(todo: $todo)
                 }
-            
+            }
             .navigationTitle("My to do list")
         }
     }
