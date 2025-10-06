@@ -21,6 +21,11 @@
 			path = week1;
 			sourceTree = "<group>";
 		};
+		35542FAC2E93B69900AF4C95 /* week 4 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "week 4";
+			sourceTree = "<group>";
+		};
 		356C08E42E83DFCC00B94B95 /* week 3 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "week 3";
@@ -29,11 +34,6 @@
 		35C3EA172E7AD00800CDB6CC /* week 2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "week 2";
-			sourceTree = "<group>";
-		};
-		35DF3A322E8652AD001F3AAF /* foundation models  */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "foundation models ";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +57,7 @@
 				351C38222E73DCA300EE17C3 /* week1 */,
 				35C3EA172E7AD00800CDB6CC /* week 2 */,
 				356C08E42E83DFCC00B94B95 /* week 3 */,
-				35DF3A322E8652AD001F3AAF /* foundation models  */,
+				35542FAC2E93B69900AF4C95 /* week 4 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,9 +87,9 @@
 			fileSystemSynchronizedGroups = (
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38222E73DCA300EE17C3 /* week1 */,
+				35542FAC2E93B69900AF4C95 /* week 4 */,
 				356C08E42E83DFCC00B94B95 /* week 3 */,
 				35C3EA172E7AD00800CDB6CC /* week 2 */,
-				35DF3A322E8652AD001F3AAF /* foundation models  */,
 			);
 			name = "SwiftUI prac";
 			packageProductDependencies = (
