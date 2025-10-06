@@ -1,0 +1,1404 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "Margherita Pizza",
+      "description": "Tasty margherita pizza prepared fresh.",
+      "price": 396.09,
+      "currency": "INR",
+      "image_url": "https://example.com/images/margherita_pizza.jpg",
+      "category": "Continental",
+      "is_available": false,
+      "rating": {
+        "average": 4.1,
+        "count": 212
+      }
+    },
+    {
+      "id": 102,
+      "name": "Paneer Butter Masala",
+      "description": "Tasty paneer butter masala prepared fresh.",
+      "price": 393.37,
+      "currency": "INR",
+      "image_url": "https://example.com/images/paneer_butter_masala.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.5,
+        "count": 488
+      }
+    },
+    {
+      "id": 103,
+      "name": "Veg Burger",
+      "description": "Tasty veg burger prepared fresh.",
+      "price": 435.02,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_burger.jpg",
+      "category": "Dessert",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 461
+      }
+    },
+    {
+      "id": 104,
+      "name": "Chicken Biryani",
+      "description": "Tasty chicken biryani prepared fresh.",
+      "price": 410.9,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_biryani.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 4.5,
+        "count": 485
+      }
+    },
+    {
+      "id": 105,
+      "name": "Pasta Alfredo",
+      "description": "Tasty pasta alfredo prepared fresh.",
+      "price": 266.25,
+      "currency": "INR",
+      "image_url": "https://example.com/images/pasta_alfredo.jpg",
+      "category": "Chinese",
+      "is_available": true,
+      "rating": {
+        "average": 3.9,
+        "count": 205
+      }
+    },
+    {
+      "id": 106,
+      "name": "Cold Coffee",
+      "description": "Tasty cold coffee prepared fresh.",
+      "price": 173.02,
+      "currency": "INR",
+      "image_url": "https://example.com/images/cold_coffee.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 387
+      }
+    },
+    {
+      "id": 107,
+      "name": "Mango Shake",
+      "description": "Tasty mango shake prepared fresh.",
+      "price": 218.27,
+      "currency": "INR",
+      "image_url": "https://example.com/images/mango_shake.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 3.8,
+        "count": 252
+      }
+    },
+    {
+      "id": 108,
+      "name": "Chocolate Brownie",
+      "description": "Tasty chocolate brownie prepared fresh.",
+      "price": 301.3,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chocolate_brownie.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.9,
+        "count": 52
+      }
+    },
+    {
+      "id": 109,
+      "name": "Caesar Salad",
+      "description": "Tasty caesar salad prepared fresh.",
+      "price": 360.09,
+      "currency": "INR",
+      "image_url": "https://example.com/images/caesar_salad.jpg",
+      "category": "Salad",
+      "is_available": false,
+      "rating": {
+        "average": 4.9,
+        "count": 378
+      }
+    },
+    {
+      "id": 110,
+      "name": "Spring Rolls",
+      "description": "Tasty spring rolls prepared fresh.",
+      "price": 462.41,
+      "currency": "INR",
+      "image_url": "https://example.com/images/spring_rolls.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 3.9,
+        "count": 163
+      }
+    },
+    {
+      "id": 111,
+      "name": "Chicken Wings",
+      "description": "Tasty chicken wings prepared fresh.",
+      "price": 292.42,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_wings.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 4.2,
+        "count": 91
+      }
+    },
+    {
+      "id": 112,
+      "name": "French Fries",
+      "description": "Tasty french fries prepared fresh.",
+      "price": 395.47,
+      "currency": "INR",
+      "image_url": "https://example.com/images/french_fries.jpg",
+      "category": "Continental",
+      "is_available": true,
+      "rating": {
+        "average": 3.8,
+        "count": 473
+      }
+    },
+    {
+      "id": 113,
+      "name": "Samosa",
+      "description": "Tasty samosa prepared fresh.",
+      "price": 377.68,
+      "currency": "INR",
+      "image_url": "https://example.com/images/samosa.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 3.8,
+        "count": 159
+      }
+    },
+    {
+      "id": 114,
+      "name": "Idli Sambar",
+      "description": "Tasty idli sambar prepared fresh.",
+      "price": 286.55,
+      "currency": "INR",
+      "image_url": "https://example.com/images/idli_sambar.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 4.7,
+        "count": 98
+      }
+    },
+    {
+      "id": 115,
+      "name": "Masala Dosa",
+      "description": "Tasty masala dosa prepared fresh.",
+      "price": 115.29,
+      "currency": "INR",
+      "image_url": "https://example.com/images/masala_dosa.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 3.9,
+        "count": 166
+      }
+    },
+    {
+      "id": 116,
+      "name": "Chowmein",
+      "description": "Tasty chowmein prepared fresh.",
+      "price": 190.4,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chowmein.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 4.6,
+        "count": 295
+      }
+    },
+    {
+      "id": 117,
+      "name": "Hakka Noodles",
+      "description": "Tasty hakka noodles prepared fresh.",
+      "price": 293.31,
+      "currency": "INR",
+      "image_url": "https://example.com/images/hakka_noodles.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 4.7,
+        "count": 337
+      }
+    },
+    {
+      "id": 118,
+      "name": "Manchurian",
+      "description": "Tasty manchurian prepared fresh.",
+      "price": 427.52,
+      "currency": "INR",
+      "image_url": "https://example.com/images/manchurian.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 3.2,
+        "count": 293
+      }
+    },
+    {
+      "id": 119,
+      "name": "Grilled Sandwich",
+      "description": "Tasty grilled sandwich prepared fresh.",
+      "price": 137.08,
+      "currency": "INR",
+      "image_url": "https://example.com/images/grilled_sandwich.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 4.1,
+        "count": 429
+      }
+    },
+    {
+      "id": 120,
+      "name": "Veg Wrap",
+      "description": "Tasty veg wrap prepared fresh.",
+      "price": 496.45,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_wrap.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.6,
+        "count": 499
+      }
+    },
+    {
+      "id": 121,
+      "name": "Tandoori Roti",
+      "description": "Tasty tandoori roti prepared fresh.",
+      "price": 459.19,
+      "currency": "INR",
+      "image_url": "https://example.com/images/tandoori_roti.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 174
+      }
+    },
+    {
+      "id": 122,
+      "name": "Butter Naan",
+      "description": "Tasty butter naan prepared fresh.",
+      "price": 398.0,
+      "currency": "INR",
+      "image_url": "https://example.com/images/butter_naan.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 3.9,
+        "count": 298
+      }
+    },
+    {
+      "id": 123,
+      "name": "Garlic Bread",
+      "description": "Tasty garlic bread prepared fresh.",
+      "price": 472.94,
+      "currency": "INR",
+      "image_url": "https://example.com/images/garlic_bread.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 4.9,
+        "count": 289
+      }
+    },
+    {
+      "id": 124,
+      "name": "Cheesecake",
+      "description": "Tasty cheesecake prepared fresh.",
+      "price": 395.27,
+      "currency": "INR",
+      "image_url": "https://example.com/images/cheesecake.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 3.8,
+        "count": 92
+      }
+    },
+    {
+      "id": 125,
+      "name": "Gulab Jamun",
+      "description": "Tasty gulab jamun prepared fresh.",
+      "price": 355.92,
+      "currency": "INR",
+      "image_url": "https://example.com/images/gulab_jamun.jpg",
+      "category": "Chinese",
+      "is_available": true,
+      "rating": {
+        "average": 4.4,
+        "count": 381
+      }
+    },
+    {
+      "id": 126,
+      "name": "Rasgulla",
+      "description": "Tasty rasgulla prepared fresh.",
+      "price": 368.12,
+      "currency": "INR",
+      "image_url": "https://example.com/images/rasgulla.jpg",
+      "category": "Continental",
+      "is_available": true,
+      "rating": {
+        "average": 4.1,
+        "count": 182
+      }
+    },
+    {
+      "id": 127,
+      "name": "Paneer Tikka",
+      "description": "Tasty paneer tikka prepared fresh.",
+      "price": 452.53,
+      "currency": "INR",
+      "image_url": "https://example.com/images/paneer_tikka.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.7,
+        "count": 299
+      }
+    },
+    {
+      "id": 128,
+      "name": "Chicken Tikka",
+      "description": "Tasty chicken tikka prepared fresh.",
+      "price": 161.62,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_tikka.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 3.5,
+        "count": 374
+      }
+    },
+    {
+      "id": 129,
+      "name": "Fish Curry",
+      "description": "Tasty fish curry prepared fresh.",
+      "price": 390.2,
+      "currency": "INR",
+      "image_url": "https://example.com/images/fish_curry.jpg",
+      "category": "Dessert",
+      "is_available": true,
+      "rating": {
+        "average": 4.6,
+        "count": 422
+      }
+    },
+    {
+      "id": 130,
+      "name": "Egg Curry",
+      "description": "Tasty egg curry prepared fresh.",
+      "price": 401.62,
+      "currency": "INR",
+      "image_url": "https://example.com/images/egg_curry.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.2,
+        "count": 222
+      }
+    },
+    {
+      "id": 131,
+      "name": "Veg Pulao",
+      "description": "Tasty veg pulao prepared fresh.",
+      "price": 261.68,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_pulao.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 4.7,
+        "count": 103
+      }
+    },
+    {
+      "id": 132,
+      "name": "Jeera Rice",
+      "description": "Tasty jeera rice prepared fresh.",
+      "price": 435.7,
+      "currency": "INR",
+      "image_url": "https://example.com/images/jeera_rice.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 4.2,
+        "count": 233
+      }
+    },
+    {
+      "id": 133,
+      "name": "Dal Tadka",
+      "description": "Tasty dal tadka prepared fresh.",
+      "price": 432.73,
+      "currency": "INR",
+      "image_url": "https://example.com/images/dal_tadka.jpg",
+      "category": "Chinese",
+      "is_available": false,
+      "rating": {
+        "average": 3.7,
+        "count": 50
+      }
+    },
+    {
+      "id": 134,
+      "name": "Rajma Chawal",
+      "description": "Tasty rajma chawal prepared fresh.",
+      "price": 421.77,
+      "currency": "INR",
+      "image_url": "https://example.com/images/rajma_chawal.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 4.5,
+        "count": 208
+      }
+    },
+    {
+      "id": 135,
+      "name": "Chole Bhature",
+      "description": "Tasty chole bhature prepared fresh.",
+      "price": 179.09,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chole_bhature.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 3.7,
+        "count": 395
+      }
+    },
+    {
+      "id": 136,
+      "name": "Pizza Supreme",
+      "description": "Tasty pizza supreme prepared fresh.",
+      "price": 497.17,
+      "currency": "INR",
+      "image_url": "https://example.com/images/pizza_supreme.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 4.7,
+        "count": 303
+      }
+    },
+    {
+      "id": 137,
+      "name": "Veggie Delight Pizza",
+      "description": "Tasty veggie delight pizza prepared fresh.",
+      "price": 421.84,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veggie_delight_pizza.jpg",
+      "category": "Dessert",
+      "is_available": false,
+      "rating": {
+        "average": 4.6,
+        "count": 396
+      }
+    },
+    {
+      "id": 138,
+      "name": "Chicken Burger",
+      "description": "Tasty chicken burger prepared fresh.",
+      "price": 304.94,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_burger.jpg",
+      "category": "Dessert",
+      "is_available": false,
+      "rating": {
+        "average": 4.8,
+        "count": 236
+      }
+    },
+    {
+      "id": 139,
+      "name": "Paneer Roll",
+      "description": "Tasty paneer roll prepared fresh.",
+      "price": 119.44,
+      "currency": "INR",
+      "image_url": "https://example.com/images/paneer_roll.jpg",
+      "category": "Salad",
+      "is_available": true,
+      "rating": {
+        "average": 5.0,
+        "count": 465
+      }
+    },
+    {
+      "id": 140,
+      "name": "Ice Cream Sundae",
+      "description": "Tasty ice cream sundae prepared fresh.",
+      "price": 329.74,
+      "currency": "INR",
+      "image_url": "https://example.com/images/ice_cream_sundae.jpg",
+      "category": "Dessert",
+      "is_available": false,
+      "rating": {
+        "average": 3.7,
+        "count": 130
+      }
+    },
+    {
+      "id": 141,
+      "name": "Falooda",
+      "description": "Tasty falooda prepared fresh.",
+      "price": 441.1,
+      "currency": "INR",
+      "image_url": "https://example.com/images/falooda.jpg",
+      "category": "Salad",
+      "is_available": true,
+      "rating": {
+        "average": 4.1,
+        "count": 217
+      }
+    },
+    {
+      "id": 142,
+      "name": "Lassi",
+      "description": "Tasty lassi prepared fresh.",
+      "price": 389.88,
+      "currency": "INR",
+      "image_url": "https://example.com/images/lassi.jpg",
+      "category": "Chinese",
+      "is_available": true,
+      "rating": {
+        "average": 4.0,
+        "count": 384
+      }
+    },
+    {
+      "id": 143,
+      "name": "Green Tea",
+      "description": "Tasty green tea prepared fresh.",
+      "price": 134.56,
+      "currency": "INR",
+      "image_url": "https://example.com/images/green_tea.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 4.0,
+        "count": 268
+      }
+    },
+    {
+      "id": 144,
+      "name": "Lemonade",
+      "description": "Tasty lemonade prepared fresh.",
+      "price": 488.42,
+      "currency": "INR",
+      "image_url": "https://example.com/images/lemonade.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 3.9,
+        "count": 217
+      }
+    },
+    {
+      "id": 145,
+      "name": "Orange Juice",
+      "description": "Tasty orange juice prepared fresh.",
+      "price": 316.49,
+      "currency": "INR",
+      "image_url": "https://example.com/images/orange_juice.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.3,
+        "count": 306
+      }
+    },
+    {
+      "id": 146,
+      "name": "Mojito",
+      "description": "Tasty mojito prepared fresh.",
+      "price": 387.74,
+      "currency": "INR",
+      "image_url": "https://example.com/images/mojito.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 4.7,
+        "count": 417
+      }
+    },
+    {
+      "id": 147,
+      "name": "Cappuccino",
+      "description": "Tasty cappuccino prepared fresh.",
+      "price": 363.22,
+      "currency": "INR",
+      "image_url": "https://example.com/images/cappuccino.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.8,
+        "count": 135
+      }
+    },
+    {
+      "id": 148,
+      "name": "Espresso",
+      "description": "Tasty espresso prepared fresh.",
+      "price": 365.85,
+      "currency": "INR",
+      "image_url": "https://example.com/images/espresso.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.9,
+        "count": 213
+      }
+    },
+    {
+      "id": 149,
+      "name": "Latte",
+      "description": "Tasty latte prepared fresh.",
+      "price": 466.56,
+      "currency": "INR",
+      "image_url": "https://example.com/images/latte.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.9,
+        "count": 127
+      }
+    },
+    {
+      "id": 150,
+      "name": "Hot Chocolate",
+      "description": "Tasty hot chocolate prepared fresh.",
+      "price": 158.09,
+      "currency": "INR",
+      "image_url": "https://example.com/images/hot_chocolate.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.8,
+        "count": 55
+      }
+    },
+    {
+      "id": 151,
+      "name": "Brownie with Ice Cream",
+      "description": "Tasty brownie with ice cream prepared fresh.",
+      "price": 235.92,
+      "currency": "INR",
+      "image_url": "https://example.com/images/brownie_with_ice_cream.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.0,
+        "count": 215
+      }
+    },
+    {
+      "id": 152,
+      "name": "Apple Pie",
+      "description": "Tasty apple pie prepared fresh.",
+      "price": 390.29,
+      "currency": "INR",
+      "image_url": "https://example.com/images/apple_pie.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 395
+      }
+    },
+    {
+      "id": 153,
+      "name": "Veg Thali",
+      "description": "Tasty veg thali prepared fresh.",
+      "price": 471.67,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_thali.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.9,
+        "count": 453
+      }
+    },
+    {
+      "id": 154,
+      "name": "Non-Veg Thali",
+      "description": "Tasty non-veg thali prepared fresh.",
+      "price": 374.9,
+      "currency": "INR",
+      "image_url": "https://example.com/images/non-veg_thali.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 4.7,
+        "count": 121
+      }
+    },
+    {
+      "id": 155,
+      "name": "Mutton Curry",
+      "description": "Tasty mutton curry prepared fresh.",
+      "price": 338.06,
+      "currency": "INR",
+      "image_url": "https://example.com/images/mutton_curry.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.4,
+        "count": 416
+      }
+    },
+    {
+      "id": 156,
+      "name": "Veg Soup",
+      "description": "Tasty veg soup prepared fresh.",
+      "price": 417.11,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_soup.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 4.2,
+        "count": 89
+      }
+    },
+    {
+      "id": 157,
+      "name": "Tomato Soup",
+      "description": "Tasty tomato soup prepared fresh.",
+      "price": 162.97,
+      "currency": "INR",
+      "image_url": "https://example.com/images/tomato_soup.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 3.6,
+        "count": 451
+      }
+    },
+    {
+      "id": 158,
+      "name": "Sweet Corn Soup",
+      "description": "Tasty sweet corn soup prepared fresh.",
+      "price": 423.61,
+      "currency": "INR",
+      "image_url": "https://example.com/images/sweet_corn_soup.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.5,
+        "count": 452
+      }
+    },
+    {
+      "id": 159,
+      "name": "Manchow Soup",
+      "description": "Tasty manchow soup prepared fresh.",
+      "price": 283.32,
+      "currency": "INR",
+      "image_url": "https://example.com/images/manchow_soup.jpg",
+      "category": "Salad",
+      "is_available": true,
+      "rating": {
+        "average": 4.3,
+        "count": 144
+      }
+    },
+    {
+      "id": 160,
+      "name": "Veg Momos",
+      "description": "Tasty veg momos prepared fresh.",
+      "price": 113.86,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_momos.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 4.6,
+        "count": 170
+      }
+    },
+    {
+      "id": 161,
+      "name": "Chicken Momos",
+      "description": "Tasty chicken momos prepared fresh.",
+      "price": 426.91,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_momos.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 4.8,
+        "count": 352
+      }
+    },
+    {
+      "id": 162,
+      "name": "Paneer Momos",
+      "description": "Tasty paneer momos prepared fresh.",
+      "price": 346.63,
+      "currency": "INR",
+      "image_url": "https://example.com/images/paneer_momos.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 4.7,
+        "count": 384
+      }
+    },
+    {
+      "id": 163,
+      "name": "Pav Bhaji",
+      "description": "Tasty pav bhaji prepared fresh.",
+      "price": 245.54,
+      "currency": "INR",
+      "image_url": "https://example.com/images/pav_bhaji.jpg",
+      "category": "Dessert",
+      "is_available": false,
+      "rating": {
+        "average": 4.2,
+        "count": 79
+      }
+    },
+    {
+      "id": 164,
+      "name": "Misal Pav",
+      "description": "Tasty misal pav prepared fresh.",
+      "price": 468.0,
+      "currency": "INR",
+      "image_url": "https://example.com/images/misal_pav.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 3.9,
+        "count": 221
+      }
+    },
+    {
+      "id": 165,
+      "name": "Vada Pav",
+      "description": "Tasty vada pav prepared fresh.",
+      "price": 168.6,
+      "currency": "INR",
+      "image_url": "https://example.com/images/vada_pav.jpg",
+      "category": "Salad",
+      "is_available": true,
+      "rating": {
+        "average": 3.5,
+        "count": 374
+      }
+    },
+    {
+      "id": 166,
+      "name": "Poha",
+      "description": "Tasty poha prepared fresh.",
+      "price": 362.7,
+      "currency": "INR",
+      "image_url": "https://example.com/images/poha.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 271
+      }
+    },
+    {
+      "id": 167,
+      "name": "Upma",
+      "description": "Tasty upma prepared fresh.",
+      "price": 139.41,
+      "currency": "INR",
+      "image_url": "https://example.com/images/upma.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.3,
+        "count": 317
+      }
+    },
+    {
+      "id": 168,
+      "name": "Uttapam",
+      "description": "Tasty uttapam prepared fresh.",
+      "price": 106.6,
+      "currency": "INR",
+      "image_url": "https://example.com/images/uttapam.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 3.3,
+        "count": 151
+      }
+    },
+    {
+      "id": 169,
+      "name": "Medu Vada",
+      "description": "Tasty medu vada prepared fresh.",
+      "price": 428.0,
+      "currency": "INR",
+      "image_url": "https://example.com/images/medu_vada.jpg",
+      "category": "Chinese",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 144
+      }
+    },
+    {
+      "id": 170,
+      "name": "Aloo Paratha",
+      "description": "Tasty aloo paratha prepared fresh.",
+      "price": 196.06,
+      "currency": "INR",
+      "image_url": "https://example.com/images/aloo_paratha.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 4.3,
+        "count": 98
+      }
+    },
+    {
+      "id": 171,
+      "name": "Paneer Paratha",
+      "description": "Tasty paneer paratha prepared fresh.",
+      "price": 334.07,
+      "currency": "INR",
+      "image_url": "https://example.com/images/paneer_paratha.jpg",
+      "category": "Continental",
+      "is_available": false,
+      "rating": {
+        "average": 4.4,
+        "count": 223
+      }
+    },
+    {
+      "id": 172,
+      "name": "Chicken Shawarma",
+      "description": "Tasty chicken shawarma prepared fresh.",
+      "price": 364.72,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_shawarma.jpg",
+      "category": "Beverages",
+      "is_available": true,
+      "rating": {
+        "average": 4.8,
+        "count": 478
+      }
+    },
+    {
+      "id": 173,
+      "name": "Veg Shawarma",
+      "description": "Tasty veg shawarma prepared fresh.",
+      "price": 100.52,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_shawarma.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 4.7,
+        "count": 228
+      }
+    },
+    {
+      "id": 174,
+      "name": "Fried Rice",
+      "description": "Tasty fried rice prepared fresh.",
+      "price": 191.42,
+      "currency": "INR",
+      "image_url": "https://example.com/images/fried_rice.jpg",
+      "category": "Continental",
+      "is_available": false,
+      "rating": {
+        "average": 3.2,
+        "count": 272
+      }
+    },
+    {
+      "id": 175,
+      "name": "Schezwan Rice",
+      "description": "Tasty schezwan rice prepared fresh.",
+      "price": 433.23,
+      "currency": "INR",
+      "image_url": "https://example.com/images/schezwan_rice.jpg",
+      "category": "Continental",
+      "is_available": false,
+      "rating": {
+        "average": 4.8,
+        "count": 231
+      }
+    },
+    {
+      "id": 176,
+      "name": "Veg Kebab",
+      "description": "Tasty veg kebab prepared fresh.",
+      "price": 275.23,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_kebab.jpg",
+      "category": "Pizza",
+      "is_available": false,
+      "rating": {
+        "average": 4.9,
+        "count": 274
+      }
+    },
+    {
+      "id": 177,
+      "name": "Chicken Kebab",
+      "description": "Tasty chicken kebab prepared fresh.",
+      "price": 366.44,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_kebab.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 4.1,
+        "count": 119
+      }
+    },
+    {
+      "id": 178,
+      "name": "Paneer Frankie",
+      "description": "Tasty paneer frankie prepared fresh.",
+      "price": 144.21,
+      "currency": "INR",
+      "image_url": "https://example.com/images/paneer_frankie.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 4.9,
+        "count": 477
+      }
+    },
+    {
+      "id": 179,
+      "name": "Chicken Frankie",
+      "description": "Tasty chicken frankie prepared fresh.",
+      "price": 235.99,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chicken_frankie.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 4.9,
+        "count": 160
+      }
+    },
+    {
+      "id": 180,
+      "name": "Club Sandwich",
+      "description": "Tasty club sandwich prepared fresh.",
+      "price": 432.85,
+      "currency": "INR",
+      "image_url": "https://example.com/images/club_sandwich.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 3.5,
+        "count": 401
+      }
+    },
+    {
+      "id": 181,
+      "name": "Veg Sandwich",
+      "description": "Tasty veg sandwich prepared fresh.",
+      "price": 281.83,
+      "currency": "INR",
+      "image_url": "https://example.com/images/veg_sandwich.jpg",
+      "category": "Chinese",
+      "is_available": false,
+      "rating": {
+        "average": 3.3,
+        "count": 390
+      }
+    },
+    {
+      "id": 182,
+      "name": "Fruit Salad",
+      "description": "Tasty fruit salad prepared fresh.",
+      "price": 465.16,
+      "currency": "INR",
+      "image_url": "https://example.com/images/fruit_salad.jpg",
+      "category": "Pizza",
+      "is_available": false,
+      "rating": {
+        "average": 4.2,
+        "count": 400
+      }
+    },
+    {
+      "id": 183,
+      "name": "Greek Salad",
+      "description": "Tasty greek salad prepared fresh.",
+      "price": 263.13,
+      "currency": "INR",
+      "image_url": "https://example.com/images/greek_salad.jpg",
+      "category": "Dessert",
+      "is_available": false,
+      "rating": {
+        "average": 3.8,
+        "count": 370
+      }
+    },
+    {
+      "id": 184,
+      "name": "Coleslaw",
+      "description": "Tasty coleslaw prepared fresh.",
+      "price": 335.99,
+      "currency": "INR",
+      "image_url": "https://example.com/images/coleslaw.jpg",
+      "category": "Chinese",
+      "is_available": true,
+      "rating": {
+        "average": 3.4,
+        "count": 79
+      }
+    },
+    {
+      "id": 185,
+      "name": "Donut",
+      "description": "Tasty donut prepared fresh.",
+      "price": 123.65,
+      "currency": "INR",
+      "image_url": "https://example.com/images/donut.jpg",
+      "category": "Pizza",
+      "is_available": false,
+      "rating": {
+        "average": 4.5,
+        "count": 389
+      }
+    },
+    {
+      "id": 186,
+      "name": "Cupcake",
+      "description": "Tasty cupcake prepared fresh.",
+      "price": 101.16,
+      "currency": "INR",
+      "image_url": "https://example.com/images/cupcake.jpg",
+      "category": "Indian",
+      "is_available": false,
+      "rating": {
+        "average": 4.0,
+        "count": 428
+      }
+    },
+    {
+      "id": 187,
+      "name": "Chocolate Cake",
+      "description": "Tasty chocolate cake prepared fresh.",
+      "price": 158.1,
+      "currency": "INR",
+      "image_url": "https://example.com/images/chocolate_cake.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.6,
+        "count": 127
+      }
+    },
+    {
+      "id": 188,
+      "name": "Red Velvet Cake",
+      "description": "Tasty red velvet cake prepared fresh.",
+      "price": 321.41,
+      "currency": "INR",
+      "image_url": "https://example.com/images/red_velvet_cake.jpg",
+      "category": "Dessert",
+      "is_available": true,
+      "rating": {
+        "average": 3.5,
+        "count": 122
+      }
+    },
+    {
+      "id": 189,
+      "name": "Black Forest Cake",
+      "description": "Tasty black forest cake prepared fresh.",
+      "price": 360.56,
+      "currency": "INR",
+      "image_url": "https://example.com/images/black_forest_cake.jpg",
+      "category": "Dessert",
+      "is_available": true,
+      "rating": {
+        "average": 3.6,
+        "count": 207
+      }
+    },
+    {
+      "id": 190,
+      "name": "Pineapple Cake",
+      "description": "Tasty pineapple cake prepared fresh.",
+      "price": 213.92,
+      "currency": "INR",
+      "image_url": "https://example.com/images/pineapple_cake.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 4.0,
+        "count": 267
+      }
+    },
+    {
+      "id": 191,
+      "name": "Carrot Cake",
+      "description": "Tasty carrot cake prepared fresh.",
+      "price": 463.96,
+      "currency": "INR",
+      "image_url": "https://example.com/images/carrot_cake.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 4.7,
+        "count": 89
+      }
+    },
+    {
+      "id": 192,
+      "name": "Mousse",
+      "description": "Tasty mousse prepared fresh.",
+      "price": 117.23,
+      "currency": "INR",
+      "image_url": "https://example.com/images/mousse.jpg",
+      "category": "Beverages",
+      "is_available": false,
+      "rating": {
+        "average": 3.8,
+        "count": 120
+      }
+    },
+    {
+      "id": 193,
+      "name": "Pudding",
+      "description": "Tasty pudding prepared fresh.",
+      "price": 494.42,
+      "currency": "INR",
+      "image_url": "https://example.com/images/pudding.jpg",
+      "category": "Indian",
+      "is_available": true,
+      "rating": {
+        "average": 3.1,
+        "count": 343
+      }
+    },
+    {
+      "id": 194,
+      "name": "Ice Cream Cone",
+      "description": "Tasty ice cream cone prepared fresh.",
+      "price": 177.33,
+      "currency": "INR",
+      "image_url": "https://example.com/images/ice_cream_cone.jpg",
+      "category": "Pizza",
+      "is_available": true,
+      "rating": {
+        "average": 3.5,
+        "count": 212
+      }
+    },
+    {
+      "id": 195,
+      "name": "Milkshake",
+      "description": "Tasty milkshake prepared fresh.",
+      "price": 206.82,
+      "currency": "INR",
+      "image_url": "https://example.com/images/milkshake.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 3.7,
+        "count": 175
+      }
+    },
+    {
+      "id": 196,
+      "name": "Banana Shake",
+      "description": "Tasty banana shake prepared fresh.",
+      "price": 134.43,
+      "currency": "INR",
+      "image_url": "https://example.com/images/banana_shake.jpg",
+      "category": "Dessert",
+      "is_available": false,
+      "rating": {
+        "average": 4.2,
+        "count": 264
+      }
+    },
+    {
+      "id": 197,
+      "name": "Strawberry Shake",
+      "description": "Tasty strawberry shake prepared fresh.",
+      "price": 409.6,
+      "currency": "INR",
+      "image_url": "https://example.com/images/strawberry_shake.jpg",
+      "category": "Salad",
+      "is_available": false,
+      "rating": {
+        "average": 3.1,
+        "count": 323
+      }
+    },
+    {
+      "id": 198,
+      "name": "Blueberry Muffin",
+      "description": "Tasty blueberry muffin prepared fresh.",
+      "price": 373.11,
+      "currency": "INR",
+      "image_url": "https://example.com/images/blueberry_muffin.jpg",
+      "category": "Dessert",
+      "is_available": true,
+      "rating": {
+        "average": 4.8,
+        "count": 244
+      }
+    },
+    {
+      "id": 199,
+      "name": "Choco Lava Cake",
+      "description": "Tasty choco lava cake prepared fresh.",
+      "price": 301.89,
+      "currency": "INR",
+      "image_url": "https://example.com/images/choco_lava_cake.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 3.8,
+        "count": 297
+      }
+    },
+    {
+      "id": 200,
+      "name": "Nachos",
+      "description": "Tasty nachos prepared fresh.",
+      "price": 325.65,
+      "currency": "INR",
+      "image_url": "https://example.com/images/nachos.jpg",
+      "category": "Fast Food",
+      "is_available": false,
+      "rating": {
+        "average": 3.4,
+        "count": 364
+      }
+    }
+  ]
+}
