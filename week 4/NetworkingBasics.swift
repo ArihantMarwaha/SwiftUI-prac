@@ -26,17 +26,21 @@ class posters {
         //storing the URL
         guard let url = URL(string:"https://jsonplaceholder.typicode.com/posts") else{return}
         
+        if let path = Bundle.main.path(forResource: "products_100", ofType: "json"){
+            print(path)
+            print(URL(fileURLWithPath: path))
+            print()
+        }
+        
         do {
             let (data,_) = try await URLSession.shared.data(from: url)//calling the session
             let decodedData = try JSONDecoder().decode([Post].self,from: data)
             posty = decodedData
-            print("\(posty)")
         }
         catch{
-            print("Error fetching the data")
+            print("Error fetching the data: ")
         }
     }
-    
 }
 
 struct NetworkingBasics: View {
@@ -57,9 +61,6 @@ struct NetworkingBasics: View {
                 await data.fetchpost()
             }
         }
-
-            
-
 
     }
 }

@@ -146,6 +146,35 @@ struct DescriptionView: View {
     }
 }
 
+
+
 #Preview {
     Network_Self_()
 }
+
+
+//steps in networking
+
+//fetch data
+/*
+ let url = URL(string: "https://api.example.com/products")
+ 
+ optional binding
+ 
+ guard let url = URL(string: "https://api.example.com/products") else {
+     print("Invalid URL")
+     return
+ }
+*/
+
+/*
+
+*/
+
+/*
+
+*/
+
+/*
+
+*/
