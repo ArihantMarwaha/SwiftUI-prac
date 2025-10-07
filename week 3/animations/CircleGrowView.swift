@@ -40,3 +40,8 @@ struct CircleGrowView: View {
 #Preview {
     CircleGrowView()
 }
+
+
+#Preview {
+    CircleGrowView()
+}
