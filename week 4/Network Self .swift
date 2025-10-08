@@ -81,6 +81,19 @@ let datas = """
       "rating": {
         "average": 4.0,
         "count": 150
+      },
+    {
+      "id": 104,
+      "name": "Non Burger",
+      "description": "Crispy chicken patty with lettuce, tomato, and mayo.",
+      "price": 249.0,
+      "currency": "INR",
+      "image_url": "https://example.com/images/burger.jpg",
+      "category": "Fast Food",
+      "is_available": true,
+      "rating": {
+        "average": 4.0,
+        "count": 150
       }
     }
   ]

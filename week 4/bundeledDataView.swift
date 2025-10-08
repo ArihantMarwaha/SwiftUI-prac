@@ -42,7 +42,7 @@ class productdmodel {
     var kroducts: [kroduct] = []
     var filteredProducts: [kroduct] = []
     
-    func fetchdata() {
+    func fetchdata() async {
         do {
             guard let path = Bundle.main.path(forResource: "products_100", ofType: "json") else {
                 print("invalid link")
@@ -114,7 +114,7 @@ struct bundeledDataView: View {
             }
             .navigationTitle("Products")
             .task {
-                model.fetchdata()
+               await model.fetchdata()
             }
         }
        
@@ -197,7 +197,7 @@ struct ndeledDataView: View {
                 }
             }
             .navigationTitle("Products")
-            .task { model.fetchdata() }
+            .task { await model.fetchdata() }
         }
     }
 }
