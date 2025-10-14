@@ -33,7 +33,12 @@ class posters {
         }
         
         do {
-            let (data,_) = try await URLSession.shared.data(from: url)//calling the session
+            let (data,response) = try await URLSession.shared.data(from: url)//calling the session
+            
+            //validate a response from a URL 
+            guard let goal = response as? HTTPURLResponse,goal.statusCode == 200 else{
+                return print("There was no valid response from the link")
+            }
             let decodedData = try JSONDecoder().decode([Post].self,from: data)
             posty = decodedData
         }
