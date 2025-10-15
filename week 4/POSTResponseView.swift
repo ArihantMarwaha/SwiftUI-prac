@@ -11,6 +11,8 @@ struct hroduct: Codable {
     var id: Int
     var name: String
     var price: Double
+    
+    
 }
 
 /*
