@@ -15,7 +15,7 @@ struct hroduct: Codable {
     
 }
 
-/*
+
  func postProduct() async throws {
      guard let url = URL(string: "https://example.com/api/products") else { return }
 
@@ -23,7 +23,7 @@ struct hroduct: Codable {
      request.httpMethod = "POST" // 👈 important
      request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-     let newProduct = Product(id: 201, name: "Smartwatch", price: 149.99)
+     let newProduct = hroduct(id: 201, name: "Smartwatch", price: 149.99)
      request.httpBody = try JSONEncoder().encode(newProduct)
 
      let (data, response) = try await URLSession.shared.data(for: request)
@@ -38,8 +38,6 @@ struct hroduct: Codable {
  }
 
  
- 
- */
 
 struct POSTResponseView: View {
     var body: some View {
