@@ -7,11 +7,13 @@
 
 import Foundation
 
-enum NetworkError: Error {
-    case badURL
-    case requestFailed
-    case decodingFailed
-}
+/*
+ enum NetworkError: Error {
+     case badURL
+     case requestFailed
+     case decodingFailed
+ }
+ */
 
 /*
  func fetchData(from urlString: String) throws {

@@ -28,7 +28,7 @@ class lroducts{
         
         //response to post
         var request = URLRequest(url: url)
-        request.httpMethod = methods.get.rawValue // 👈 important
+        request.httpMethod = methods.get.rawValue 
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         
