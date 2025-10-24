@@ -6,7 +6,22 @@
 //
 
 import Foundation
+import SwiftUI
 //Reverse an array without .reversed().
+struct reverse : View {
+    func reverseInPlace<T>(_ a: inout [T]) {
+        var i = 0, j = a.count - 1
+        while i < j {
+            a.swapAt(i, j)
+            i += 1
+            j -= 1
+        }
+    }
+    var arr = [1,2,3,4,5]
+    var body: some View {
+   //     reverseInPlace(arr)
+    }
+}
 
 /*Find max and min elements in an array.
 
