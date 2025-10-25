@@ -24,8 +24,24 @@ struct reverse : View {
 }
 
 /*Find max and min elements in an array.
+ /*
+ 
+  var arr : [Int] = [1,4,9,2,6,9,32,9]
+  var min = arr[0]
+  var max = arr[0]
+  
+  for i in arr {
+  if i >= max{
+  max = i
+  }
+  if i <= min {
+  min = i
+  }
+  }
+  */
 
 Count frequency of each element in an array using Dictionary.
+ 
 
 Check if a string is a palindrome (loop and recursion).
 
