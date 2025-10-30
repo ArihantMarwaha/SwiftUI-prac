@@ -61,16 +61,19 @@ struct recView : View {
     var depth : Int = 0
     var colors : [Color] = [
         .red,
+        .blue,
         .green,
         .orange,
-        .blue
+        .yellow,
+        .cyan,
+        .purple
     ]
     
     
     
     var body: some View {
        
-        let colindex = abs(depth-1) % colors.count
+        let colindex = abs(depth)
         let col = colors[colindex]
         
         if depth > 0{
@@ -79,6 +82,7 @@ struct recView : View {
                     recView(depth: depth-1)
                     Color.clear
                 }
+                
                 HStack(spacing: 0){
                     Color.clear
                     recView(depth: depth-1)
@@ -87,10 +91,26 @@ struct recView : View {
             }
             .background(col)
         }
-        else if depth <= 0{
-            Color.clear
+    }
+}
+
+
+
+struct recall : View {
+    var depths : Int
+    var body: some View {
+        VStack(spacing:0){
+            HStack(spacing:0){
+               recView(depth: depths)
+                Color.white
+            }
+            HStack(spacing:0){
+                Color.white
+                recView(depth: depths)
+                
+            }
         }
-        
+        .padding([.top,.bottom],-50)
     }
 }
 
@@ -105,4 +125,10 @@ struct recView : View {
 
 #Preview {
     recView(depth: 3)
+}
+
+
+#Preview {
+    recall(depths: 4)
+    
 }
