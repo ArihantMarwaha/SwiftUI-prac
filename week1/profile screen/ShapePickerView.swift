@@ -43,7 +43,7 @@ struct ShapePickerView: View {
                 Text(shape)
             }
         }
-        .pickerStyle(.menu)
+        .pickerStyle(.palette)
         .padding(40)
         
         

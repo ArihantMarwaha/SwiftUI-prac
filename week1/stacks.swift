@@ -72,36 +72,39 @@ struct stacks: View {
             }
             
             var houses : [String] = ["House 1","House 2","House 3"]
-            
-            VStack{
-                Text("House 1")
-                    .bold()
-                    .fontWidth(.expanded)
-                    .fontWeight(.heavy)
-                    .font(.largeTitle)
-                Text("Hosue 2")
-                    .bold()
-                    .fontWidth(.expanded)
-                    .fontWeight(.heavy)
-                    .font(.title)
-                Text("House 3")
-                    .bold()
-                    .fontWidth(.expanded)
-                    .fontWeight(.heavy)
-                    .font(.headline)
-                Text("Hosue 4")
-                    .bold()
-                    .fontWidth(.expanded)
-                    .fontWeight(.heavy)
-                    .font(.callout)
-                Text("House 5")
-                    .bold()
-                    .fontWidth(.expanded)
-                    .fontWeight(.heavy)
-                    .font(.subheadline)
-                Text("Hosue 6")
+            ScrollView{
+                VStack{
+                    Text("House 1")
+                        .bold()
+                        .fontWidth(.expanded)
+                        .fontWeight(.heavy)
+                        .font(.largeTitle)
+                    Text("Hosue 2")
+                        .bold()
+                        .fontWidth(.expanded)
+                        .fontWeight(.heavy)
+                        .font(.title)
+                    Text("House 3")
+                        .bold()
+                        .fontWidth(.expanded)
+                        .fontWeight(.heavy)
+                        .font(.headline)
+                    Text("Hosue 4")
+                        .bold()
+                        .fontWidth(.expanded)
+                        .fontWeight(.heavy)
+                        .font(.callout)
+                    Text("House 5")
+                        .bold()
+                        .fontWidth(.expanded)
+                        .fontWeight(.heavy)
+                        .font(.subheadline)
+                    Text("Hosue 6")
                     
+                        
+                }
             }
+            
 
         }
             

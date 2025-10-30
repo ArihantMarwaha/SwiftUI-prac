@@ -62,5 +62,5 @@ struct testingforbind: View {
 }
 
 #Preview {
-    testingforbind()
+    boldy()
 }

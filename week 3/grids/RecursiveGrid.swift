@@ -68,14 +68,12 @@ struct boat : View {
                 .font(.largeTitle.bold())
             
             RecursivePatternView(n: Int(n))
-                .aspectRatio(1.0, contentMode: .fit)
                 .border(Color.primary, width: 2)
                 .padding()
             
             Slider(value: $n, in: 1...8, step: 1)
                 .padding()
             
-            Spacer()
         }
         .padding()
     }
