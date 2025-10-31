@@ -7,22 +7,52 @@
 
 import SwiftUI
 
-struct RecursiveSquares: View {
-    var depth: Int
+
+struct RecursiveSquaresView: View {
+    @State private var depth: Int = 0
+
+    private let baseSize: CGFloat = 60
+    private let step: CGFloat = 30
+    private let colors: [Color] = [.red, .blue, .green, .orange, .purple, .yellow]
+
     var body: some View {
-        if depth == 0 {
-            Rectangle().fill(Color.blue).frame(width: 50, height: 50)
-        } else {
-            ZStack {
-                Rectangle().stroke(Color.black, lineWidth: 6)
-                    .fill(Color.blue)
-                    .frame(width: CGFloat(50 + depth * 30),
-                           height: CGFloat(50 + depth * 30))
-                RecursiveSquares(depth: depth - 1)
+        ZStack {
+            // Draw outer squares first (so they appear behind)
+            ForEach((0...depth).reversed(), id: \.self) { level in
+                let size = baseSize + CGFloat(level) * step
+                Rectangle()
+                    .fill(colors[level % colors.count])
+                    .frame(width: size, height: size)
+                    .overlay(Rectangle().stroke(Color.black, lineWidth: 4))
+                    .animation(.spring(response: 0.4, dampingFraction: 0.7), value: depth)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.systemBackground))
+        .onTapGesture {
+            withAnimation(.easeInOut(duration: 0.3)) {
+                depth += 1
+            }
+        }
+        .onLongPressGesture {
+            withAnimation(.easeOut(duration: 0.3)) {
+                depth = 0
             }
         }
     }
 }
+
+#Preview {
+    RecursiveSquaresView()
+}
+
+
+#Preview {
+    RecursiveSquaresView()
+}
+
+
+
 
 let columns = [
     GridItem(.flexible()),
@@ -116,7 +146,7 @@ struct recall : View {
 
 
 #Preview {
-    RecursiveSquares(depth: 4)
+    RecursiveSquaresView()
 }
 
 #Preview {
