@@ -45,7 +45,7 @@ class lroducts{
             throw URLError(.badServerResponse)
         }
         
-        var decode = try JSONDecoder().decode(lroduct.self,from: data)
+        let decode = try JSONDecoder().decode(lroduct.self,from: data)
         print("✅ Product added:", decode.name)
         
     }

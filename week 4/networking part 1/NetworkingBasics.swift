@@ -32,6 +32,8 @@ class posters {
             print()
         }
         
+      //  if let psts = Bundle.main.path(forResource: , ofType: )
+        
         do {
             let (data,response) = try await URLSession.shared.data(from: url)//calling the session
             
