@@ -11,7 +11,7 @@ struct CircleGrowView: View {
     
     @State var size = 1.0
     @State var colindex = 0
-    var index : [Color] = [.blue,.indigo,.red,.orange,.cyan]
+    var index : [Color] = [.blue,.orange,.cyan]
 
     var body: some View {
         

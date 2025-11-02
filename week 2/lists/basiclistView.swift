@@ -119,6 +119,7 @@ struct todoRows : View {
 }
 
 struct todolistmain : View {
+    
     @State private var items : [todolistitem] = [
         todolistitem(title: "Work", done: false),
         todolistitem(title: "Work 2", done: true),

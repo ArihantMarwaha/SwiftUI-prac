@@ -71,7 +71,7 @@ struct boat : View {
                 .border(Color.primary, width: 2)
                 .padding()
             
-            Slider(value: $n, in: 1...8, step: 1)
+            Slider(value: $n, in: 1...5, step: 1)
                 .padding()
             
         }

@@ -19,6 +19,8 @@ struct formsBasic: View {
                     .autocorrectionDisabled(true)
             }
             
+    
+            
             Section(header: Text("Preferences")) {
                 Toggle("Enable Notifications", isOn: $notifications)
                 Slider(value: $volume, in: 0...100)

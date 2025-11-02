@@ -34,18 +34,28 @@ struct TheUltimateProject: View {
     @State var model = mandate()
     
     var body: some View {
-        Form{
-            Section{
-                ForEach($model.mans){
-                    $man in
-                    HStack{
-                        TextField(man.name,text: $man.name)
-
-                        }
-                   
+        NavigationStack{
+            Form{
+                Section{
+                    ForEach($model.mans){
+                        $man in
+                        HStack{
+                            TextField(man.name,text: $man.name)
+                            }
+                    
+                       
+                    }
+                }
+                
+            }
+            .toolbar{
+                Button("+"){
+                    model.addnew(name: "HANTA")
                 }
             }
         }
+        
+       
     }
 }
 

@@ -52,12 +52,7 @@ struct scaleAnimationsView: View {
             .onTapGesture { withAnimation { toggle.toggle() } }
     }
     
-    
-    
-    
-    
-    
-    
+
 }
 
 #Preview {
