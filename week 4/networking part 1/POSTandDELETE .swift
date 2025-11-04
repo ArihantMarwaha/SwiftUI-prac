@@ -24,13 +24,12 @@ enum methods: String {
 class lroducts{
     func postdata() async throws {
         //URL
-        guard let url = URL(string: "https://example.com/api/products") else { return }
+        guard let url = URL(string: "https://example.com/api/products/\("ID")") else { return }
         
         //response to post
         var request = URLRequest(url: url)
         request.httpMethod = methods.get.rawValue 
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
         
         //creating data
         let newProduct = lroduct(id: 201, name: "Smartwatch", price: 149.99)
