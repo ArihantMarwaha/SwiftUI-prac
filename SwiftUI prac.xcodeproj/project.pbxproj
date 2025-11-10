@@ -11,6 +11,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		35018D642EC24B8F0000FB38 /* week 5 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "week 5";
+			sourceTree = "<group>";
+		};
 		351C38162E73DC8400EE17C3 /* SwiftUI prac */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SwiftUI prac";
@@ -64,6 +69,7 @@
 				356C08E42E83DFCC00B94B95 /* week 3 */,
 				35542FAC2E93B69900AF4C95 /* week 4 */,
 				35FC12402EAA8569007C97FB /* interview questions */,
+				35018D642EC24B8F0000FB38 /* week 5 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +97,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				35018D642EC24B8F0000FB38 /* week 5 */,
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38222E73DCA300EE17C3 /* week1 */,
 				35542FAC2E93B69900AF4C95 /* week 4 */,
