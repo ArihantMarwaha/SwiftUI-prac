@@ -36,6 +36,11 @@
 			path = "week 3";
 			sourceTree = "<group>";
 		};
+		359A6C792ECE0A0A007A0B2A /* week 6 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "week 6";
+			sourceTree = "<group>";
+		};
 		35C3EA172E7AD00800CDB6CC /* week 2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "week 2";
@@ -70,6 +75,7 @@
 				35542FAC2E93B69900AF4C95 /* week 4 */,
 				35FC12402EAA8569007C97FB /* interview questions */,
 				35018D642EC24B8F0000FB38 /* week 5 */,
+				359A6C792ECE0A0A007A0B2A /* week 6 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +108,7 @@
 				351C38222E73DCA300EE17C3 /* week1 */,
 				35542FAC2E93B69900AF4C95 /* week 4 */,
 				356C08E42E83DFCC00B94B95 /* week 3 */,
+				359A6C792ECE0A0A007A0B2A /* week 6 */,
 				35C3EA172E7AD00800CDB6CC /* week 2 */,
 				35FC12402EAA8569007C97FB /* interview questions */,
 			);
