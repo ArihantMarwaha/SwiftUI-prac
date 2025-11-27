@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct generics_: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct swapper{
+    var a : Int
+    var b : Int
+    func swap<T>(a : inout T,b:inout T){
+        let tem = a
+        a = b
+        b = tem
+    }
+    init(a: Int, b: Int) {
+        self.a = a
+        self.b = b
     }
 }
 
-#Preview {
-    generics_()
-}
+
+
+
