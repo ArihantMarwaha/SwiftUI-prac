@@ -26,6 +26,11 @@
 			path = week1;
 			sourceTree = "<group>";
 		};
+		3530D2782EE69F00009D233B /* DSA */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DSA;
+			sourceTree = "<group>";
+		};
 		35542FAC2E93B69900AF4C95 /* week 4 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "week 4";
@@ -76,6 +81,7 @@
 				35FC12402EAA8569007C97FB /* interview questions */,
 				35018D642EC24B8F0000FB38 /* week 5 */,
 				359A6C792ECE0A0A007A0B2A /* week 6 */,
+				3530D2782EE69F00009D233B /* DSA */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +112,7 @@
 				35018D642EC24B8F0000FB38 /* week 5 */,
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38222E73DCA300EE17C3 /* week1 */,
+				3530D2782EE69F00009D233B /* DSA */,
 				35542FAC2E93B69900AF4C95 /* week 4 */,
 				356C08E42E83DFCC00B94B95 /* week 3 */,
 				359A6C792ECE0A0A007A0B2A /* week 6 */,
