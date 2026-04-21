@@ -29,7 +29,7 @@ struct scrollview : View {
         
         
         Slider(value: $clone,in:50...300,step: 10)
-            .onChange(of: clone){ newValue in
+            .onChange(of: clone){ _,newValue in
             angles = Double(newValue)
         }
             .padding(80)

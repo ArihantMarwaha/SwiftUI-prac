@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct BindingMacro: View {
+    
+    @Binding var side : CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        //        ZStack {
+        //            if side <= 100 {
+        //                Circle()
+        //                    .stroke()
+        //                    .frame(width: side, height: side)
+        //                    .animation(.bouncy,value: side)
+        //            } else {
+        //                Rectangle()
+        //                    .stroke()
+        //                    .frame(width: side, height: side)
+        //                    .animation(.bouncy,value: side)
+        //            }
+        //        }
+        
+        ZStack{
+            RoundedRectangle(cornerRadius: Int(side) % 3 == 0 ? side / 2 : 0)
+                .frame(width: side-30 , height: side-30)
+                .animation(.bouncy,value: side)
+            
+            RoundedRectangle(cornerRadius: Int(side) % 3 == 0 ? side / 2 : 0)
+                .stroke()
+                .frame(width: side, height: side)
+                .animation(.bouncy, value: side)
+            
+        }
+ 
     }
 }
 
 #Preview {
-    BindingMacro()
+    BindingMacro(side: .constant(50))
 }

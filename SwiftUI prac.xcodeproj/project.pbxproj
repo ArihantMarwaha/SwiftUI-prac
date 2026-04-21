@@ -10,50 +10,94 @@
 		351C38142E73DC8400EE17C3 /* SwiftUI prac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI prac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		35B56AF92F97428C00DAAE23 /* Exceptions for "State management" folder in "SwiftUI prac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BindingMacro.swift,
+				StateMacro.swift,
+				StateObjectMacro.swift,
+			);
+			target = 351C38132E73DC8400EE17C3 /* SwiftUI prac */;
+		};
+		35B56B012F97605B00DAAE23 /* Exceptions for "function and closures" folder in "SwiftUI prac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Functions.swift,
+			);
+			target = 351C38132E73DC8400EE17C3 /* SwiftUI prac */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		35018D642EC24B8F0000FB38 /* week 5 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "week 5";
+			name = "week 5";
+			path = "../week 5";
 			sourceTree = "<group>";
 		};
 		351C38162E73DC8400EE17C3 /* SwiftUI prac */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SwiftUI prac";
+			name = "SwiftUI prac";
+			path = "../SwiftUI prac";
 			sourceTree = "<group>";
 		};
 		351C38222E73DCA300EE17C3 /* week1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = week1;
+			name = week1;
+			path = ../week1;
 			sourceTree = "<group>";
 		};
 		3530D2782EE69F00009D233B /* DSA */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DSA;
+			name = DSA;
+			path = ../DSA;
 			sourceTree = "<group>";
 		};
 		35542FAC2E93B69900AF4C95 /* week 4 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "week 4";
+			name = "week 4";
+			path = "../week 4";
 			sourceTree = "<group>";
 		};
 		356C08E42E83DFCC00B94B95 /* week 3 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "week 3";
+			name = "week 3";
+			path = "../week 3";
 			sourceTree = "<group>";
 		};
 		359A6C792ECE0A0A007A0B2A /* week 6 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "week 6";
+			name = "week 6";
+			path = "../week 6";
+			sourceTree = "<group>";
+		};
+		35B56AF62F97422100DAAE23 /* State management */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35B56AF92F97428C00DAAE23 /* Exceptions for "State management" folder in "SwiftUI prac" target */,
+			);
+			path = "State management";
+			sourceTree = "<group>";
+		};
+		35B56AFE2F97604800DAAE23 /* function and closures */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35B56B012F97605B00DAAE23 /* Exceptions for "function and closures" folder in "SwiftUI prac" target */,
+			);
+			path = "function and closures";
 			sourceTree = "<group>";
 		};
 		35C3EA172E7AD00800CDB6CC /* week 2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "week 2";
+			name = "week 2";
+			path = "../week 2";
 			sourceTree = "<group>";
 		};
 		35FC12402EAA8569007C97FB /* interview questions */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "interview questions";
+			name = "interview questions";
+			path = "../interview questions";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -72,6 +116,31 @@
 		351C380B2E73DC8300EE17C3 = {
 			isa = PBXGroup;
 			children = (
+				35B56AF52F97420C00DAAE23 /* 2025 */,
+				35B56AF42F9741FF00DAAE23 /* 2026 */,
+			);
+			sourceTree = "<group>";
+		};
+		351C38152E73DC8400EE17C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				351C38142E73DC8400EE17C3 /* SwiftUI prac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B56AF42F9741FF00DAAE23 /* 2026 */ = {
+			isa = PBXGroup;
+			children = (
+				35B56AFE2F97604800DAAE23 /* function and closures */,
+				35B56AF62F97422100DAAE23 /* State management */,
+			);
+			path = 2026;
+			sourceTree = "<group>";
+		};
+		35B56AF52F97420C00DAAE23 /* 2025 */ = {
+			isa = PBXGroup;
+			children = (
 				351C38162E73DC8400EE17C3 /* SwiftUI prac */,
 				351C38152E73DC8400EE17C3 /* Products */,
 				351C38222E73DCA300EE17C3 /* week1 */,
@@ -83,14 +152,7 @@
 				359A6C792ECE0A0A007A0B2A /* week 6 */,
 				3530D2782EE69F00009D233B /* DSA */,
 			);
-			sourceTree = "<group>";
-		};
-		351C38152E73DC8400EE17C3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				351C38142E73DC8400EE17C3 /* SwiftUI prac.app */,
-			);
-			name = Products;
+			path = 2025;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
